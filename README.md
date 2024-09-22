@@ -45,10 +45,14 @@ Verify the tagged Docker image.
 
 Upload your Docker image to Azure Container Registry.
 
-Create Azure Container Instance:
-az container create --resource-group <ResourceGroupName> --name <ContainerName> --image <RegistryName>.azurecr.io/<your-image-name>:v1 --dns-name-label <DnsNameLabel> --ports 80
+* Create Azure Container Instance:
+
+  az container create --resource-group <ResourceGroupName> --name <ContainerName> --image <RegistryName>.azurecr.io/<your-image-name>:v1 --dns-name-label <DnsNameLabel> --ports 80
+
 Deploy your containerized application on Azure Container Instance.
 
-Check Container Deployment Status:
-az container show --resource-group <ResourceGroupName> --name <ContainerName> --query "{FQDN:ipAddress.fqdn,ProvisioningState:provisioningState}" --out table
+* Check Container Deployment Status:
+
+  az container show --resource-group <ResourceGroupName> --name <ContainerName> --query "{FQDN:ipAddress.fqdn,ProvisioningState:provisioningState}" --out table
+
 Check the deployment status and obtain the Fully Qualified Domain Name (FQDN) of your deployed container.
