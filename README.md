@@ -1,5 +1,5 @@
 # DockerML-Azure
-deploy-ml-model-as-dockerized-api-on-azure
+# deploy-ml-model-as-dockerized-api-on-azure
 Steps to deploy:
 
 Build the Code and Dockerfile: Prepare your application code and a Dockerfile, which is a text document that contains the commands to assemble the Docker image.
